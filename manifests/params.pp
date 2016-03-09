@@ -112,6 +112,10 @@ class yum::params {
   $el_ol7_MySQL55                  = 'http://public-yum.oracle.com/repo/OracleLinux/OL7/MySQL55/$basearch/'
   $el_ol7_spacewalk22_client       = 'http://public-yum.oracle.com/repo/OracleLinux/OL7/spacewalk22/client/$basearch/'
 
+  $elx_sl          = undef
+  $elx_sl_security = undef
+  $elx_sl_fastbugs = undef
+
   # File definitions
   if $::operatingsystemmajrelease == '6' {
     $el_slx_file                     = '/etc/yum.repos.d/sl6x.repo'
