@@ -161,9 +161,9 @@ class yum (
   # Start workflow
   if $yum::params::linux {
     # Containment
-    contain yum::package
-    contain yum::config
-    contain yum::service
+    include yum::package
+    include yum::config
+    include yum::service
 
     Class['yum::package'] ->
     Class['yum::config'] ->
